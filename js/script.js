@@ -20,19 +20,20 @@ var elRooms = document.getElementById('rooms');
 elRooms.textContent = hotel.checkAvailablity();
 
 // Define a constructor function template for hotels
-function Hotel(name, rooms, booked) {
+function Hotel(name, rooms, booked, gym) {
     // Object properties
     this.name = name;
     this.rooms = rooms;
     this.booked = booked;
+    this.gym = gym;
     this.checkAvailablity = function() {
         return this.rooms - this.booked;
     };
 }
 
 // Define to instances of the hotel and their arguments
-var KidsHotel = new Hotel('Kids World Hotel', 68, 3);
-var LoliPopHotel = new Hotel('LoliPop Hotel', 56, 15);
+var KidsHotel = new Hotel('Kids World Hotel', 68, 3, true);
+var LoliPopHotel = new Hotel('LoliPop Hotel', 56, 15, false);
 
 // Declare a variable to hold the name of the hotel and room availability 
 var details1 = KidsHotel.name + ' rooms: ';
@@ -42,6 +43,8 @@ var details1 = KidsHotel.name + ' rooms: ';
 var elHotel1 = document.getElementById('hotel1');
 // Add the variables created onto the empty div
 elHotel1.textContent = details1;
+
+document.getElementById('gymAvailable').textContent ='Gym for Kids:' + KidsHotel.gym;
 
 var details2 = LoliPopHotel.name + ' rooms: ';
     details2 += LoliPopHotel.checkAvailablity();
