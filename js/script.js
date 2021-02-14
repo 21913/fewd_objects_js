@@ -51,9 +51,8 @@ var details2 = LoliPopHotel.name + ' rooms: ';
 var elHotel2 = document.getElementById('hotel2');
 elHotel2.textContent = details2
 
-var msg2 = '<p><b> Page title: </b>' + document.title + '<br />';
-msg2 += '<b>Page address: </b>' + document.URL + '<br />';
-msg2 += '<b>Last Modified: </b>' + document.lastModified + '</p>';
+//Random num
+var randowNum = Math.floor((Math.randow() * 10) + 1);
+var el3 = document.getElementById('hotel');
+el3. innerHTML += '<h2>randow number</h2><p>' + randowNum + '</p>';
 
-var el2 = document.getElementById('info');
-el2.innerHTML = msg2;
