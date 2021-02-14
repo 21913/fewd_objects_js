@@ -50,3 +50,10 @@ var details2 = LoliPopHotel.name + ' rooms: ';
     details2 += LoliPopHotel.checkAvailablity();
 var elHotel2 = document.getElementById('hotel2');
 elHotel2.textContent = details2
+
+var msg2 = '<p><b> Page title: </b>' + document.title + '<br />';
+msg2 += '<b>Page address: </b>' + document.URL + '<br />';
+msg2 += '<b>Last Modified: </b>' + document.lastModified + '</p>';
+
+var el2 = document.getElementById('info');
+el2.innerHTML = msg2;
