@@ -22,9 +22,9 @@ h1 {
   white-space: nowrap;
   overflow: hidden;
   margin: 0px; 
-  position: absolute; 
-	left: 10px; 
-    top: 10px; 
+  position: fixed; 
+	left: 20px; 
+    top: 80px; 
 }
 
 h2 {
@@ -58,10 +58,11 @@ p + h2 {
   width: 200px;
   padding: 0 15px;
   text-align: center;
-  min-height: 85%;
-  position: absolute;
-  top: 30;
-  right: 15%;}
+  min-height: 100%;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+}
 
 /* details in the black bar */
 
@@ -114,15 +115,24 @@ p + h2 {
    
   }
 
-  nav ul{
-   float: right;
-   margin-right: 40px;
- }
 
+  nav ul{
+   list-style-type: none;
+    float: left;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   background-color: rgb(255, 255, 128);
+   position: fixed;
+   top: 0;
+   width: 100%;
+   border-bottom: 5px solid chocolate;
+  
+ }
 
  nav li{
    float: left;
-   margin-right: 40px;
+  
  }
 
  nav li a {
@@ -133,7 +143,20 @@ p + h2 {
      text-decoration: none;
  }
 
+#main{
+   padding: 24px 50px;
 
+}
+
+.container{
+    /* set to be the full size of the browser page */
+    width: 85%;
+    height: 100%;
+    /* move a 100px down from the top margin */
+    margin-top: 100px;
+    margin-left: 30px;
+   
+}
 
 .true, .false {
   padding: 0 50px 0 50px;

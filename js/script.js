@@ -52,3 +52,11 @@ var randowNum = Math.floor((Math.randow() * 10) + 1);
 var el3 = document.getElementById('hotel');
 el3. innerHTML += '<h2>randow number</h2><p>' + randowNum + '</p>';
 
+
+//DOM
+var msg2 = '<p><b>Page title:</b>' + document.title + '<br />';
+msg2 += '<b>Page Address: </b>' + document.URL + '<br />';
+msg2 += ' <b> Last Modified: </b>' + document.lastModified + '</p>';
+
+var el2 = document.getElementById('footer');
+el2.innerHTML = msg2;
