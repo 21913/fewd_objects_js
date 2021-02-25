@@ -49,14 +49,49 @@ elHotel2.textContent = details2
 
 //Random num
 var randowNum = Math.floor((Math.randow() * 10) + 1);
-var el3 = document.getElementById('hotel');
+var el3 = document.getElementById('math');
 el3. innerHTML += '<h2>randow number</h2><p>' + randowNum + '</p>';
 
 
 //DOM
-var msg2 = '<p><b>Page title:</b>' + document.title + '<br />';
-msg2 += '<b>Page Address: </b>' + document.URL + '<br />';
-msg2 += ' <b> Last Modified: </b>' + document.lastModified + '</p>';
+//how to add title var > should 
+
+function Title() {
+    
+    this.title = title; // 'Kids World Hotel',
+    }
+
+function Url () {
+    this.URL = URL; //'kidsworldhotel.com.ie',
+}
+
+function LastModified () {
+this.lastModified = lastModified; //'5 min ago',
+}
+
+var theTitle =  new Title ('Kids World Hotel');
+var theUrl = new Url('kidsworldhotel.com');
+var theLastModified = new LastModified('5 min ago');
+
+
+document.getElementById('title').textContent = theTitle.title + ' *****.';
+document.getElementById('url').textContent = theUrl.url + '.ie';
+document.getElementById('lastModified').textContent = theLastModified.lastModified + '.';
+
+
+//var el1 = document.getElementById('title');
+//el1.textContent = msg1;
+/*
+
+
+
+
+
+
+var msg1 = Title.title + ' ***** ';
+
+
+
 
 var el2 = document.getElementById('footer');
-el2.innerHTML = msg2;
+el2.innerHTML = msg2;*/

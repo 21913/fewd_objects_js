@@ -15,7 +15,7 @@ h1 {
   background: url("../images/Logo.png");
   background-size: 100% 80%;
   background-repeat:no-repeat;
-  width: 290px;
+  width: 320px;
   height: 250px;
   float: left;
   text-indent: 100%;
@@ -33,11 +33,30 @@ h2 {
   font-weight: normal;}
 
 h2 + p {
+ 
   margin: 0.25em 0 0 0;}
 p + p {
   margin: 0;}
 p + h2 {
   margin: 10px 0 0 0;}
+
+h3 {
+  text-indent: 400%;
+  
+  color: chocolate; 
+  font-weight: normal;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+
+h3 + p {
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    }
+p + h3 {
+  margin: 20px 0 0 0;
+}
 
 /* message under the logo */
 
@@ -174,12 +193,14 @@ p + h2 {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 100%;
+  width: 50%;
   background-color: #adffda;}
 
 #footer p {
-  padding: 10px;
-  margin: 0;}
+  padding: 5px;
+  margin: 0;
+  width: 50%;
+ }
 
 .data {
   padding: 10px;}
