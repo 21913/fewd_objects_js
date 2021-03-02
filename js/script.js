@@ -1,5 +1,6 @@
 var hotel = {
     // Object properties
+    // Object properties
     name: 'Kids World Hotel',
     rooms: 50,
     booked: 17,
@@ -47,51 +48,36 @@ var details2 = LoliPopHotel.name + ' rooms: ';
 var elHotel2 = document.getElementById('hotel2');
 elHotel2.textContent = details2
 
-//Random num
-var randowNum = Math.floor((Math.randow() * 10) + 1);
-var el3 = document.getElementById('math');
-el3. innerHTML += '<h2>randow number</h2><p>' + randowNum + '</p>';
+//Randow num - Math.randow() 
+//var randowNum = Math.floor((Math.randow() * 10) + 1);
+//var el3 = document.getElementById('math');
+//el3.innerHTML += '<h2>Randow number</h2><p>' + randowNum + '</p>';
 
 
 //DOM
 //how to add title var > should 
-
-function Title() {
-    
+function Title(title) {
     this.title = title; // 'Kids World Hotel',
     }
-
-function Url () {
+function URL(URL) {
     this.URL = URL; //'kidsworldhotel.com.ie',
 }
-
-function LastModified () {
-this.lastModified = lastModified; //'5 min ago',
+function LastModified(lastModified) {
+this.LastModified = lastModified; //'5 min ago',
 }
 
 var theTitle =  new Title ('Kids World Hotel');
-var theUrl = new Url('kidsworldhotel.com');
-var theLastModified = new LastModified('5 min ago');
+var theURL = new Url('kidsworldhotel.com');
+var theLastModified = new LastModified('2 min ago');
 
 
-document.getElementById('title').textContent = theTitle.title + ' *****.';
-document.getElementById('url').textContent = theUrl.url + '.ie';
+document.getElementById('title').textContent = theTitle.title + ': where the kids learn and play!.';
+document.getElementById('URL').textContent = theUrl.URL + '.ie';
 document.getElementById('lastModified').textContent = theLastModified.lastModified + '.';
 
 
 //var el1 = document.getElementById('title');
 //el1.textContent = msg1;
-/*
-
-
-
-
-
-
-var msg1 = Title.title + ' ***** ';
-
-
-
-
+/* var msg1 = Title.title + ' ****** ';
 var el2 = document.getElementById('footer');
-el2.innerHTML = msg2;*/
+el2.innerHTML = msg2;*/  

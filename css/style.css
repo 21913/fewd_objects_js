@@ -1,6 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 
-
 body {
   background-color: rgba(126, 88, 88, 0);
    background: url("../images/travelworthy-backdrop.png") no-repeat center center fixed;
@@ -203,4 +202,4 @@ p + h3 {
  }
 
 .data {
-  padding: 10px;}
+  padding: 10px;}  
